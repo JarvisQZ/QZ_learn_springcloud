@@ -8,6 +8,7 @@ eureka:
       defaultZone: http://eureka7001.com:7001/eureka/
 
 
+# 用于服务降级 在注解@FeignClient中添加fallbackFactory属性值
 feign:
   hystrix:
-    enabled: true
+    enabled: true #在Feign中开启Hystrix
